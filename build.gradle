@@ -58,7 +58,7 @@ afterEvaluate {
                 from components.release
                 groupId 'com.github.darwinmorocho-deuna'
                 artifactId 'deunasdk'
-                version '2.5.0'
+                version '2.5.0-beta3'
                 artifact("$buildDir/outputs/aar/deuna-sdk-android-release.aar")
             }
         }
