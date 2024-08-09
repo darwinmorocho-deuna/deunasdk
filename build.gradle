@@ -34,6 +34,22 @@ android {
     }
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                groupId 'com.github.darwinmorocho-deuna'
+                artifactId 'deunasdk'
+                version '2.5.0'
+            }
+        }
+    }
+}
+
+signing {
+    sign publishing.publications
+}
+
 dependencies {
     api 'com.squareup.okhttp3:okhttp:4.12.0'
     api 'com.squareup.retrofit2:retrofit:2.9.0'
