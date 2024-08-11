@@ -36,8 +36,8 @@ android {
     }
 }
 
-signing {
-    sign publishing.publications
+tasks.withType(Sign).configureEach {
+    enabled = false
 }
 
 dependencies {
